@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 2</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khareedo - Mobile Store</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
   <!-- HEADER -->
   <section id="header">
-    <a href="#"><img src="imgs/logo.png" class="logo" alt=""></a>
+    <a href="#"><img src="imgs/logo.png" class="logo" alt="Khareedo Logo"></a>
 
     <div>
       <ul id="navbar">
@@ -23,240 +21,173 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="contact.html">Contact us</a></li>
-       <li>
-  <a id="cartLink" style="cursor:pointer;">
-    <i class="fas fa-shopping-bag"></i>
-  </a>
-</li>
+        <li>
+          <a id="cartLink" style="cursor:pointer;">
+            <i class="fas fa-shopping-bag"></i>
+          </a>
+        </li>
 
-      
         <!-- Dynamic Cognito Login / Logout -->
-    <li><a id="loginBtn" style="cursor:pointer;">Login</a></li>
-    <li><a id="logoutBtn" style="cursor:pointer; display:none;">Logout</a></li>
-    <li id="userDisplay" style="margin-left:15px; font-weight:bold;"></li>
-
+        <li><a id="loginBtn" style="cursor:pointer;">Login</a></li>
+        <li><a id="logoutBtn" style="cursor:pointer; display:none;">Logout</a></li>
+        <li id="userDisplay" style="margin-left:15px; font-weight:bold;"></li>
       </ul>
     </div>
   </section>
 
   <!-- HERO SECTION -->
   <section id="hero">
-    <h4>Trade-in-offer</h4>
-    <h2>Super value deals</h2>
-    <h1>On all products</h1>
-    <p>save more with coupons upto 75%!</p>
-    <button>Shop Now</button>
+    <h4>Limited Time Offer</h4>
+    <h2>Latest Smartphones</h2>
+    <h1>Top deals on mobile phones</h1>
+    <p>Save more with offers up to 40% on selected models</p>
+    <button onclick="location.href='shop.html'">Shop Now</button>
   </section>
 
   <!-- FEATURES -->
   <section id="featured" class="section-p1">
-    <div class="fe-box"><img src="imgs/f1.png">
-      <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box"><img src="imgs/f2.png">
-      <h6>Online Orders</h6>
-    </div>
-    <div class="fe-box"><img src="imgs/f3.png">
-      <h6>Best Offers</h6>
-    </div>
-    <div class="fe-box"><img src="imgs/f4.png">
-      <h6>Promotions</h6>
-    </div>
-    <div class="fe-box"><img src="imgs/f5.png">
-      <h6>Reviews</h6>
-    </div>
-    <div class="fe-box"><img src="imgs/f6.png">
-      <h6>Customer Help</h6>
-    </div>
+    <div class="fe-box"><img src="imgs/f1.png" alt=""><h6>Free Shipping</h6></div>
+    <div class="fe-box"><img src="imgs/f2.png" alt=""><h6>Secure Payments</h6></div>
+    <div class="fe-box"><img src="imgs/f3.png" alt=""><h6>7-Day Returns</h6></div>
+    <div class="fe-box"><img src="imgs/f4.png" alt=""><h6>1-Year Warranty</h6></div>
+    <div class="fe-box"><img src="imgs/f5.png" alt=""><h6>24/7 Support</h6></div>
+    <div class="fe-box"><img src="imgs/f6.png" alt=""><h6>Best Offers</h6></div>
   </section>
 
   <!-- FEATURED PRODUCTS -->
   <section id="Product1" class="section-p1">
-    <h2>Featured Products</h2>
-    <p>Summer Collection is Here!</p>
+    <h2>Featured Smartphones</h2>
+    <p>Top picks for you</p>
 
     <div class="Pro-container">
-
-      <div class="pro" onclick="location.href='product.html?id=f1'">
-        <img src="imgs/products/f1.jpg">
-        <div class="des"><span>Adidas</span>
-          <h5>Astrodes T-shirt</h5>
-          <h4>$60</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p1'">
+        <img src="imgs/products/p1.jpg" alt="Phone 1">
+        <div class="des"><span>Apple</span><h5>iPhone 15 Pro</h5><h4>$999</h4></div>
       </div>
 
-      <div class="pro" onclick="location.href='product.html?id=f2'">
-        <img src="imgs/products/f2.jpg">
-        <div class="des"><span>Fendi</span>
-          <h5>Trendy Green</h5>
-          <h4>$56</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p2'">
+        <img src="imgs/products/p2.jpg" alt="Phone 2">
+        <div class="des"><span>Samsung</span><h5>Galaxy S24 Ultra</h5><h4>$1199</h4></div>
       </div>
 
-      <div class="pro" onclick="location.href='product.html?id=f3'">
-        <img src="imgs/products/f3.jpg">
-        <div class="des"><span>Procks</span>
-          <h5>Mustard-Yellow T-shirt</h5>
-          <h4>$80</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p3'">
+        <img src="imgs/products/p3.jpg" alt="Phone 3">
+        <div class="des"><span>OnePlus</span><h5>OnePlus 12</h5><h4>$799</h4></div>
       </div>
 
-      <div class="pro" onclick="location.href='product.html?id=f4'">
-        <img src="imgs/products/f4.jpg">
-        <div class="des"><span>Adidas</span>
-          <h5>Cupid Rose</h5>
-          <h4>$100</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p4'">
+        <img src="imgs/products/p4.jpg" alt="Phone 4">
+        <div class="des"><span>Google</span><h5>Pixel 8</h5><h4>$699</h4></div>
       </div>
 
-      <div class="pro" onclick="location.href='product.html?id=f5'">
-        <img src="imgs/products/f5.jpg">
-        <div class="des"><span>Nike</span>
-          <h5>Trunks</h5>
-          <h4>$75</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p5'">
+        <img src="imgs/products/p5.jpg" alt="Phone 5">
+        <div class="des"><span>Xiaomi</span><h5>Redmi Note 13</h5><h4>$249</h4></div>
       </div>
 
-      <div class="pro" onclick="location.href='product.html?id=f6'">
-        <img src="imgs/products/f6.jpg">
-        <div class="des"><span>Fendi</span>
-          <h5>Mixed T-shirt</h5>
-          <h4>$80</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p6'">
+        <img src="imgs/products/p6.jpg" alt="Phone 6">
+        <div class="des"><span>Realme</span><h5>Realme 12 Pro</h5><h4>$299</h4></div>
       </div>
 
-      <div class="pro" onclick="location.href='product.html?id=f7'">
-        <img src="imgs/products/f7.jpg">
-        <div class="des"><span>Gucci</span>
-          <h5>Bottom Stylers</h5>
-          <h4>$60</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p7'">
+        <img src="imgs/products/p7.jpg" alt="Phone 7">
+        <div class="des"><span>Vivo</span><h5>Vivo V30</h5><h4>$349</h4></div>
       </div>
 
-      <div class="pro" onclick="location.href='product.html?id=f8'">
-        <img src="imgs/products/f8.jpg">
-        <div class="des"><span>Adidas</span>
-          <h5>Cult-Classic</h5>
-          <h4>$40</h4>
-        </div>
+      <div class="pro" onclick="location.href='product.html?id=p8'">
+        <img src="imgs/products/p8.jpg" alt="Phone 8">
+        <div class="des"><span>Oppo</span><h5>Reno 11</h5><h4>$329</h4></div>
       </div>
-
     </div>
   </section>
 
   <!-- BANNER -->
   <section id="Banner" class="section-m1">
-    <h4>Repair Services</h4>
-    <h1>Up to</h1>
-    <h2><span>70% off</span> on All T-shirts and Accessories</h2>
-    <h2>Best deals on Featured Products</h2>
-    <button class="normal">Explore More</button>
+    <h4>Trade-in Program</h4>
+    <h1>Upgrade & Save</h1>
+    <h2><span>Flat 30% off</span> on exchange of old phones</h2>
+    <button class="normal" onclick="location.href='shop.html'">Explore Offers</button>
   </section>
 
   <!-- NEW ARRIVALS -->
   <section id="Product1" class="section-p1">
     <h2>New Arrivals</h2>
-    <p>Style in your Own way!</p>
+    <p>Fresh launches</p>
 
     <div class="Pro-container">
-
       <div class="pro" onclick="location.href='product.html?id=n1'">
-        <img src="imgs/products/n1.jpg">
-        <div class="des"><span>StyleMe</span>
-          <h5>Plain Blue</h5>
-          <h4>$10</h4>
-        </div>
+        <img src="imgs/products/n1.jpg" alt="New 1">
+        <div class="des"><span>Apple</span><h5>iPhone 15</h5><h4>$899</h4></div>
       </div>
 
       <div class="pro" onclick="location.href='product.html?id=n2'">
-        <img src="imgs/products/n2.jpg">
-        <div class="des"><span>Fendi</span>
-          <h5>Fits Best</h5>
-          <h4>$56</h4>
-        </div>
+        <img src="imgs/products/n2.jpg" alt="New 2">
+        <div class="des"><span>Samsung</span><h5>Galaxy S24</h5><h4>$999</h4></div>
       </div>
 
       <div class="pro" onclick="location.href='product.html?id=n3'">
-        <img src="imgs/products/n3.jpg">
-        <div class="des"><span>Funks</span>
-          <h5>Off-White Formal</h5>
-          <h4>$25</h4>
-        </div>
+        <img src="imgs/products/n3.jpg" alt="New 3">
+        <div class="des"><span>OnePlus</span><h5>OnePlus 12T</h5><h4>$749</h4></div>
       </div>
 
       <div class="pro" onclick="location.href='product.html?id=n4'">
-        <img src="imgs/products/n4.jpg">
-        <div class="des"><span>Adidas</span>
-          <h5>Camo-Green</h5>
-          <h4>$50</h4>
-        </div>
+        <img src="imgs/products/n4.jpg" alt="New 4">
+        <div class="des"><span>Google</span><h5>Pixel 8a</h5><h4>$499</h4></div>
       </div>
 
       <div class="pro" onclick="location.href='product.html?id=n5'">
-        <img src="imgs/products/n5.jpg">
-        <div class="des"><span>Denim</span>
-          <h5>Den-Blue</h5>
-          <h4>$75</h4>
-        </div>
+        <img src="imgs/products/n5.jpg" alt="New 5">
+        <div class="des"><span>Xiaomi</span><h5>Redmi 13</h5><h4>$199</h4></div>
       </div>
 
       <div class="pro" onclick="location.href='product.html?id=n6'">
-        <img src="imgs/products/n6.jpg">
-        <div class="des"><span>Fendi</span>
-          <h5>Shorts</h5>
-          <h4>$30</h4>
-        </div>
+        <img src="imgs/products/n6.jpg" alt="New 6">
+        <div class="des"><span>Realme</span><h5>Realme GT</h5><h4>$329</h4></div>
       </div>
 
       <div class="pro" onclick="location.href='product.html?id=n7'">
-        <img src="imgs/products/n7.jpg">
-        <div class="des"><span>Xris</span>
-          <h5>Turmeric-Yellow</h5>
-          <h4>$40</h4>
-        </div>
+        <img src="imgs/products/n7.jpg" alt="New 7">
+        <div class="des"><span>Vivo</span><h5>Vivo T2</h5><h4>$279</h4></div>
       </div>
 
       <div class="pro" onclick="location.href='product.html?id=n8'">
-        <img src="imgs/products/n8.jpg">
-        <div class="des"><span>Adidas</span>
-          <h5>Cult-Classic</h5>
-          <h4>$40</h4>
-        </div>
+        <img src="imgs/products/n8.jpg" alt="New 8">
+        <div class="des"><span>Oppo</span><h5>Oppo A78</h5><h4>$229</h4></div>
       </div>
-
     </div>
   </section>
 
   <!-- MINI BANNERS -->
   <section id="sm-banner" class="section-p1">
     <div class="Banner-box">
-      <h4>crazy deals</h4>
-      <h2>Buy 1 get 1 free</h2>
-      <span>The best classic dress is on sale!</span>
-      <button class="white">Explore it!</button>
+      <h4>Accessory Deals</h4>
+      <h2>Buy earbuds, chargers & cases</h2>
+      <span>Top accessories for your phone</span>
+      <button class="white" onclick="location.href='shop.html'">Shop Accessories</button>
     </div>
 
     <div class="Banner-box Banner-box2">
-      <h4>Best deals</h4>
-      <h2>upcoming seasons</h2>
-      <span>The best classic dress is on sale!</span>
-      <button class="white">Collection!</button>
+      <h4>Repair Services</h4>
+      <h2>Official service centres</h2>
+      <span>Fast repair & genuine parts</span>
+      <button class="white" onclick="location.href='contact.html'">Book Now</button>
     </div>
   </section>
 
   <!-- TRIPLE BANNERS -->
   <section id="Banner3">
     <div class="Banner-box">
-      <h2>Seasonal sale</h2>
-      <h3>Winters are on the way - 50% off</h3>
+      <h2>Fast Delivery</h2>
+      <h3>Get phones delivered in 24-48 hrs</h3>
     </div>
     <div class="Banner-box Banner-box2">
-      <h2>Seasonal sale</h2>
-      <h3>Top jackets and coats</h3>
+      <h2>Secure Payments</h2>
+      <h3>Multiple payment methods</h3>
     </div>
     <div class="Banner-box Banner-box3">
-      <h2>Seasonal sale</h2>
-      <h3>Fashion Hub</h3>
+      <h2>Customer Support</h2>
+      <h3>24/7 live chat & helpline</h3>
     </div>
   </section>
 
@@ -264,11 +195,11 @@
   <section id="newsletter" class="section-p1 section-m1">
     <div class="newstext">
       <h4>Sign Up for newsletter</h4>
-      <p>Get E-mail updates about our latest shops and <span>special Offers.</span></p>
+      <p>Get E-mail updates about our latest phones and <span>exclusive offers.</span></p>
     </div>
 
     <div class="form">
-      <input type="text" placeholder="Your Email Address">
+      <input type="email" placeholder="Your Email Address">
       <button class="normal">Sign Up</button>
     </div>
   </section>
@@ -276,11 +207,11 @@
   <!-- FOOTER -->
   <footer class="section-p1">
     <div class="col">
-      <img src="imgs/logo.png">
+      <img src="imgs/logo.png" alt="logo">
       <h4>Contact</h4>
-      <p><strong>Address:</strong>Lorem ipsum dolor sit amet.</p>
-      <p><strong>Phone:</strong>91546255522</p>
-      <p><strong>Hours:</strong>Mon–Sat 10:00–18:00 IST</p>
+      <p><strong>Address:</strong> 123 Mobile Street, New Delhi</p>
+      <p><strong>Phone:</strong> 91546255522</p>
+      <p><strong>Hours:</strong> Mon–Sat 10:00–18:00 IST</p>
 
       <div class="follow">
         <h4>Follow us on</h4>
@@ -294,13 +225,10 @@
       </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.1"></script>
   <script src="auth.js"></script>
   <script src="appwrite.js"></script>
 
 </body>
-
-
-
-
 </html>
