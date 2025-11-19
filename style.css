@@ -54,7 +54,7 @@ body {
 /* HERO SECTION */
 #hero {
     height: 80vh;
-    background: url("imgs/hero-mobile.jpg") center/cover no-repeat;
+    background: url("hero.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
