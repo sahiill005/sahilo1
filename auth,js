@@ -1,6 +1,10 @@
-// === AWS Cognito Config ===
+// ===============================
+//        AWS COGNITO CONFIG
+// ===============================
 const cognitoDomain = "https://ap-south-1yzdd1yqun.auth.ap-south-1.amazoncognito.com";
 const clientId = "4jeul47opmuiuo5o4vipii9hdf";
+
+// UPDATED FOR YOUR DEPLOYED SITE
 const redirectUri = "https://sahilo1.vercel.app/index.html";
 const logoutRedirectUri = "https://sahilo1.vercel.app/index.html";
 
@@ -15,24 +19,28 @@ const logoutUrl =
   `&logout_uri=${logoutRedirectUri}`;
 
 
-// === PAGE LOAD ===
+// ===============================
+//     PAGE LOAD INITIALIZER
+// ===============================
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Auth JS Loaded Successfully");
+  console.log("Auth Loaded");
 
-  protectCartIcon();            // Protect cart
-  protectAddToCartButtons();    // Protect add-to-cart buttons
-  handleRedirect();             // Handle Cognito redirect
-  updateUI();                   // Update Login/Logout buttons
+  handleRedirect();           
+  updateUI();                 
+  protectCartIcon();          
+  protectAddToCartButtons();  
 });
 
 
-// === HANDLE REDIRECT (After Login) ===
+// ===============================
+//      HANDLE REDIRECT LOGIN
+// ===============================
 function handleRedirect() {
   const hash = window.location.hash;
 
   if (!hash.includes("id_token")) return;
 
-  const params = new URLSearchParams(hash.substring(1)); // remove '#'
+  const params = new URLSearchParams(hash.substring(1));
 
   const idToken = params.get("id_token");
   const accessToken = params.get("access_token");
@@ -41,12 +49,14 @@ function handleRedirect() {
     localStorage.setItem("id_token", idToken);
     localStorage.setItem("access_token", accessToken);
 
-    window.location.hash = ""; // clean URL
+    window.location.hash = ""; // CLEAN URL
   }
 }
 
 
-// === PROTECT CART ICON ===
+// ===============================
+//     PROTECT CART ICON
+// ===============================
 function protectCartIcon() {
   const cartLink = document.getElementById("cartLink");
   if (!cartLink) return;
@@ -55,16 +65,19 @@ function protectCartIcon() {
     const idToken = localStorage.getItem("id_token");
 
     if (!idToken) {
-      alert("You must be logged in to view the cart.");
+      alert("You must be logged in to view your cart.");
       window.location.href = loginUrl;
-    } else {
-      window.location.href = "cart.html";
+      return;
     }
+
+    window.location.href = "cart.html";
   };
 }
 
 
-// === PROTECT ADD-TO-CART BUTTONS ===
+// ===============================
+//     PROTECT ADD-TO-CART BTNS
+// ===============================
 function protectAddToCartButtons() {
   const buttons = document.querySelectorAll(".addToCartBtn");
 
@@ -73,19 +86,23 @@ function protectAddToCartButtons() {
       const idToken = localStorage.getItem("id_token");
 
       if (!idToken) {
-        alert("Please log in to add items.");
+        alert("Please login to add items to the cart.");
         window.location.href = loginUrl;
         return;
       }
 
       const id = btn.dataset.id;
-      addToCartFromCard(id);
+      if (typeof addToCartFromCard === "function") {
+        addToCartFromCard(id);
+      }
     });
   });
 }
 
 
-// === UPDATE LOGIN/LOGOUT UI ===
+// ===============================
+//    UPDATE LOGIN/LOGOUT UI
+// ===============================
 function updateUI() {
   const idToken = localStorage.getItem("id_token");
   const loginBtn = document.getElementById("loginBtn");
@@ -95,28 +112,23 @@ function updateUI() {
   if (!loginBtn || !logoutBtn) return;
 
   if (idToken) {
-    console.log("User Logged In");
-
+    // LOGGED IN
     loginBtn.style.display = "none";
     logoutBtn.style.display = "inline-block";
     userDisplay.textContent = "Logged In ✔";
-
   } else {
-    console.log("User Logged Out");
-
+    // LOGGED OUT
     loginBtn.style.display = "inline-block";
     logoutBtn.style.display = "none";
     userDisplay.textContent = "";
   }
-
-  // This ensures protection checks re-run after UI update
-  protectCartIcon();
-  protectAddToCartButtons();
 }
 
 
-// === LOGOUT HANDLER ===
-document.addEventListener("click", (e) => {
+// ===============================
+//       LOGOUT HANDLER
+// ===============================
+document.addEventListener("click", e => {
   if (e.target.id === "logoutBtn") {
     localStorage.clear();
     window.location.href = logoutUrl;
