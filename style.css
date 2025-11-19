@@ -9,7 +9,7 @@
 /* BODY */
 body {
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: #f5f7fa;
     color: #222;
 }
 
@@ -20,14 +20,14 @@ body {
     align-items: center;
     padding: 18px 50px;
     background: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.07);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
 #header .logo {
-    width: 130px;
+    width: 135px;
 }
 
 #navbar {
@@ -47,19 +47,20 @@ body {
 
 #navbar li a:hover,
 #navbar li a.active {
-    color: #088178;
-    border-bottom: 2px solid #088178;
+    color: #0a6efd;
+    border-bottom: 2px solid #0a6efd;
 }
 
 /* HERO SECTION */
 #hero {
     height: 80vh;
-    background: url("imgs/hero.png") center/cover no-repeat;
+    background: url("imgs/hero-mobile.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 70px;
     color: #fff;
+    backdrop-filter: brightness(80%);
 }
 
 #hero h4 {
@@ -68,7 +69,7 @@ body {
 
 #hero h1 {
     font-size: 55px;
-    font-weight: bold;
+    font-weight: 700;
     margin: 10px 0;
 }
 
@@ -78,7 +79,7 @@ body {
 }
 
 #hero button {
-    background: #088178;
+    background: #0a6efd;
     padding: 14px 35px;
     border: none;
     border-radius: 6px;
@@ -89,7 +90,7 @@ body {
 }
 
 #hero button:hover {
-    background: #066c62;
+    background: #084dc0;
 }
 
 /* FEATURES SECTION */
@@ -110,7 +111,7 @@ body {
     border-radius: 8px;
     background: white;
     margin: 15px;
-    box-shadow: 0px 2px 12px rgba(0,0,0,0.09);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06);
     transition: 0.3s;
 }
 
@@ -125,7 +126,7 @@ body {
 /* PRODUCT GRID */
 .Pro-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 25px;
     margin-top: 20px;
 }
@@ -133,14 +134,14 @@ body {
 .pro {
     background: white;
     padding-bottom: 18px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: 0.3s ease;
 }
 
 .pro img {
     width: 100%;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .pro:hover {
@@ -162,33 +163,34 @@ body {
 }
 
 .des h4 {
-    color: #088178;
+    color: #0a6efd;
     font-size: 18px;
     font-weight: 600;
 }
 
-/* BANNER */
+/* MAIN BANNER */
 #Banner {
     text-align: center;
-    padding: 60px 20px;
-    background: url("imgs/banner.png") center/cover;
+    padding: 70px 20px;
+    background: url("imgs/mobile-banner.jpg") center/cover;
     color: #fff;
+    border-radius: 10px;
 }
 
 #Banner button {
     background: #fff;
-    color: #088178;
+    color: #0a6efd;
     padding: 12px 30px;
     font-size: 18px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
     margin-top: 12px;
-    transition: 0.3s;
+    font-weight: 600;
 }
 
 #Banner button:hover {
-    background: #e5e4e4;
+    background: #eaeaea;
 }
 
 /* SMALL BANNERS */
@@ -201,19 +203,27 @@ body {
 .Banner-box {
     flex: 1;
     padding: 50px 20px;
-    background: #088178;
+    background: #0a6efd;
     color: white;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+.Banner-box2 {
+    background: #1f1f1f !important;
 }
 
 .Banner-box button {
     background: white;
     padding: 10px 25px;
-    color: #088178;
+    color: #0a6efd;
     border: none;
     font-weight: 600;
     cursor: pointer;
+}
+
+.Banner-box button:hover {
+    background: #d8d8d8;
 }
 
 /* TRIPLE BANNERS */
@@ -225,39 +235,40 @@ body {
 
 #Banner3 .Banner-box {
     flex: 1;
-    background: #333;
+    background: #1f1f1f;
     color: white;
     padding: 40px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
 }
 
 /* NEWSLETTER */
 #newsletter {
-    background: #041e42;
+    background: #0a6efd;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 40px 50px;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 #newsletter input {
     padding: 12px 20px;
-    width: 250px;
+    width: 280px;
     border: none;
     outline: none;
     border-radius: 6px;
 }
 
 #newsletter button {
-    background: #088178;
-    color: white;
+    background: #fff;
+    color: #0a6efd;
     padding: 12px 25px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
 }
 
 /* FOOTER */
@@ -284,7 +295,7 @@ footer .icon i {
 }
 
 footer .icon i:hover {
-    color: #088178;
+    color: #0a6efd;
 }
 
 /* RESPONSIVE */
@@ -299,6 +310,7 @@ footer .icon i:hover {
 
     #hero {
         padding-left: 20px;
+        height: 65vh;
     }
 
     #newsletter {
@@ -307,7 +319,8 @@ footer .icon i:hover {
         text-align: center;
     }
 
-    #sm-banner, #Banner3 {
+    #sm-banner,
+    #Banner3 {
         flex-direction: column;
     }
 }
