@@ -4,9 +4,9 @@
 const cognitoDomain = "https://ap-south-1yzdd1yqun.auth.ap-south-1.amazoncognito.com";
 const clientId = "4jeul47opmuiuo5o4vipii9hdf";
 
-// UPDATED FOR YOUR DEPLOYED SITE
-const redirectUri = "https://sahilo1.vercel.app/index.html";
-const logoutRedirectUri = "https://sahilo1.vercel.app/index.html";
+// UPDATED FOR YOUR NEW VERSEL DEPLOYED SITE
+const redirectUri = "https://sahilo1-6tdo4ioj4-sahils-projects-a31a24cf.vercel.app/index.html";
+const logoutRedirectUri = "https://sahilo1-6tdo4ioj4-sahils-projects-a31a24cf.vercel.app/index.html";
 
 // Login URL
 const loginUrl =
@@ -25,7 +25,7 @@ const logoutUrl =
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Auth Loaded");
 
-  setLoginButton();             // <-- IMPORTANT FIX
+  setLoginButton();             
   handleRedirect();            
   updateUI();                 
   protectCartIcon();          
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ===============================
-//     FIX: LOGIN BUTTON CLICK
+//     LOGIN BUTTON CLICK FIX
 // ===============================
 function setLoginButton() {
   const loginBtn = document.getElementById("loginBtn");
