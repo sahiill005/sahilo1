@@ -25,11 +25,26 @@ const logoutUrl =
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Auth Loaded");
 
-  handleRedirect();           
+  setLoginButton();             // <-- IMPORTANT FIX
+  handleRedirect();            
   updateUI();                 
   protectCartIcon();          
   protectAddToCartButtons();  
 });
+
+
+// ===============================
+//     FIX: LOGIN BUTTON CLICK
+// ===============================
+function setLoginButton() {
+  const loginBtn = document.getElementById("loginBtn");
+  if (loginBtn) {
+    loginBtn.onclick = () => {
+      console.log("Redirecting to login:", loginUrl);
+      window.location.href = loginUrl;
+    };
+  }
+}
 
 
 // ===============================
@@ -112,12 +127,10 @@ function updateUI() {
   if (!loginBtn || !logoutBtn) return;
 
   if (idToken) {
-    // LOGGED IN
     loginBtn.style.display = "none";
     logoutBtn.style.display = "inline-block";
     userDisplay.textContent = "Logged In ✔";
   } else {
-    // LOGGED OUT
     loginBtn.style.display = "inline-block";
     logoutBtn.style.display = "none";
     userDisplay.textContent = "";
