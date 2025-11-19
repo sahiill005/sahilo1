@@ -5,8 +5,8 @@ const cognitoDomain = "https://ap-south-1yzdd1yqun.auth.ap-south-1.amazoncognito
 const clientId = "4jeul47opmuiuo5o4vipii9hdf";
 
 // UPDATED FOR YOUR NEW VERSEL DEPLOYED SITE
-const redirectUri = "https://sahilo1-6tdo4ioj4-sahils-projects-a31a24cf.vercel.app/index.html";
-const logoutRedirectUri = "https://sahilo1-6tdo4ioj4-sahils-projects-a31a24cf.vercel.app/index.html";
+const redirectUri = "https://sahilo1.vercel.app/index.html";
+const logoutRedirectUri = "https://sahilo1.vercel.app/index.html";
 
 // Login URL
 const loginUrl =
