@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <section id="header">
+    <a href="#"><img src="imgs/logo.png" class="logo" alt=""></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+       <li>
+  <a id="cartLink" style="cursor:pointer;">
+    <i class="fas fa-shopping-bag"></i>
+  </a>
+</li>
+
+      
+        <!-- Dynamic Cognito Login / Logout -->
+    <li><a id="loginBtn" style="cursor:pointer;">Login</a></li>
+    <li><a id="logoutBtn" style="cursor:pointer; display:none;">Logout</a></li>
+    <li id="userDisplay" style="margin-left:15px; font-weight:bold;"></li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>save more with coupons upto 75%!</p>
+    <button>Shop Now</button>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="featured" class="section-p1">
+    <div class="fe-box"><img src="imgs/f1.png">
+      <h6>Free Shipping</h6>
+    </div>
+    <div class="fe-box"><img src="imgs/f2.png">
+      <h6>Online Orders</h6>
+    </div>
+    <div class="fe-box"><img src="imgs/f3.png">
+      <h6>Best Offers</h6>
+    </div>
+    <div class="fe-box"><img src="imgs/f4.png">
+      <h6>Promotions</h6>
+    </div>
+    <div class="fe-box"><img src="imgs/f5.png">
+      <h6>Reviews</h6>
+    </div>
+    <div class="fe-box"><img src="imgs/f6.png">
+      <h6>Customer Help</h6>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section id="Product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Summer Collection is Here!</p>
+
+    <div class="Pro-container">
+
+      <div class="pro" onclick="location.href='product.html?id=f1'">
+        <img src="imgs/products/f1.jpg">
+        <div class="des"><span>Adidas</span>
+          <h5>Astrodes T-shirt</h5>
+          <h4>$60</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=f2'">
+        <img src="imgs/products/f2.jpg">
+        <div class="des"><span>Fendi</span>
+          <h5>Trendy Green</h5>
+          <h4>$56</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=f3'">
+        <img src="imgs/products/f3.jpg">
+        <div class="des"><span>Procks</span>
+          <h5>Mustard-Yellow T-shirt</h5>
+          <h4>$80</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=f4'">
+        <img src="imgs/products/f4.jpg">
+        <div class="des"><span>Adidas</span>
+          <h5>Cupid Rose</h5>
+          <h4>$100</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=f5'">
+        <img src="imgs/products/f5.jpg">
+        <div class="des"><span>Nike</span>
+          <h5>Trunks</h5>
+          <h4>$75</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=f6'">
+        <img src="imgs/products/f6.jpg">
+        <div class="des"><span>Fendi</span>
+          <h5>Mixed T-shirt</h5>
+          <h4>$80</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=f7'">
+        <img src="imgs/products/f7.jpg">
+        <div class="des"><span>Gucci</span>
+          <h5>Bottom Stylers</h5>
+          <h4>$60</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=f8'">
+        <img src="imgs/products/f8.jpg">
+        <div class="des"><span>Adidas</span>
+          <h5>Cult-Classic</h5>
+          <h4>$40</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section id="Banner" class="section-m1">
+    <h4>Repair Services</h4>
+    <h1>Up to</h1>
+    <h2><span>70% off</span> on All T-shirts and Accessories</h2>
+    <h2>Best deals on Featured Products</h2>
+    <button class="normal">Explore More</button>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section id="Product1" class="section-p1">
+    <h2>New Arrivals</h2>
+    <p>Style in your Own way!</p>
+
+    <div class="Pro-container">
+
+      <div class="pro" onclick="location.href='product.html?id=n1'">
+        <img src="imgs/products/n1.jpg">
+        <div class="des"><span>StyleMe</span>
+          <h5>Plain Blue</h5>
+          <h4>$10</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=n2'">
+        <img src="imgs/products/n2.jpg">
+        <div class="des"><span>Fendi</span>
+          <h5>Fits Best</h5>
+          <h4>$56</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=n3'">
+        <img src="imgs/products/n3.jpg">
+        <div class="des"><span>Funks</span>
+          <h5>Off-White Formal</h5>
+          <h4>$25</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=n4'">
+        <img src="imgs/products/n4.jpg">
+        <div class="des"><span>Adidas</span>
+          <h5>Camo-Green</h5>
+          <h4>$50</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=n5'">
+        <img src="imgs/products/n5.jpg">
+        <div class="des"><span>Denim</span>
+          <h5>Den-Blue</h5>
+          <h4>$75</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=n6'">
+        <img src="imgs/products/n6.jpg">
+        <div class="des"><span>Fendi</span>
+          <h5>Shorts</h5>
+          <h4>$30</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=n7'">
+        <img src="imgs/products/n7.jpg">
+        <div class="des"><span>Xris</span>
+          <h5>Turmeric-Yellow</h5>
+          <h4>$40</h4>
+        </div>
+      </div>
+
+      <div class="pro" onclick="location.href='product.html?id=n8'">
+        <img src="imgs/products/n8.jpg">
+        <div class="des"><span>Adidas</span>
+          <h5>Cult-Classic</h5>
+          <h4>$40</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MINI BANNERS -->
+  <section id="sm-banner" class="section-p1">
+    <div class="Banner-box">
+      <h4>crazy deals</h4>
+      <h2>Buy 1 get 1 free</h2>
+      <span>The best classic dress is on sale!</span>
+      <button class="white">Explore it!</button>
+    </div>
+
+    <div class="Banner-box Banner-box2">
+      <h4>Best deals</h4>
+      <h2>upcoming seasons</h2>
+      <span>The best classic dress is on sale!</span>
+      <button class="white">Collection!</button>
+    </div>
+  </section>
+
+  <!-- TRIPLE BANNERS -->
+  <section id="Banner3">
+    <div class="Banner-box">
+      <h2>Seasonal sale</h2>
+      <h3>Winters are on the way - 50% off</h3>
+    </div>
+    <div class="Banner-box Banner-box2">
+      <h2>Seasonal sale</h2>
+      <h3>Top jackets and coats</h3>
+    </div>
+    <div class="Banner-box Banner-box3">
+      <h2>Seasonal sale</h2>
+      <h3>Fashion Hub</h3>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up for newsletter</h4>
+      <p>Get E-mail updates about our latest shops and <span>special Offers.</span></p>
+    </div>
+
+    <div class="form">
+      <input type="text" placeholder="Your Email Address">
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section-p1">
+    <div class="col">
+      <img src="imgs/logo.png">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong>Lorem ipsum dolor sit amet.</p>
+      <p><strong>Phone:</strong>91546255522</p>
+      <p><strong>Hours:</strong>Mon–Sat 10:00–18:00 IST</p>
+
+      <div class="follow">
+        <h4>Follow us on</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.1"></script>
+  <script src="auth.js"></script>
+  <script src="appwrite.js"></script>
+
+</body>
+
+
+
+
+</html>
